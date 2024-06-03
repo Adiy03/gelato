@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+.hero .kiri {
+    flex: 1;
+    display: flex;
+}
+
+.hero .kiri img {
+    width: 100%;
+}
+
+.hero .kanan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.about .kiri {
+    flex: 1;
+}
+
+.about .kanan {
+    flex: 1;
+}
+
+.about .kiri img {
+    width: 100%;
+}
+
+.about .kanan img {
+    width: 100%;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+.product img {
+    width: 100%;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.box .kiri {
+    flex: 1;
+}
+
+.org .box .kanan {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.org .kiri img,
+.org .kanan img {
+    width: 100%;
+    height: 60vh;
+}
+
+.judul {
+    display: flex;
+    text-align: center;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+section .reverse,
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.horeca {
+    display: flex;
+    flex-direction: row;
+}
+
+.horeca .box {
+    flex: 1;
+}
+
+.horeca .box img {
+    width: 100%;
+}
+
+.rat {
+    height: 50vh;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marbot {
+    margin-bottom: 3rem;
+}
+
+.padding {
+    padding: 2rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+
+    .reverse{
+        display: none;
+    }
+    
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .hero .kiri, .hero .kanan {
+        flex: none;
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+    
+    .about .kiri, .about .kanan {
+        flex: none;
+        width: 100%;
+    }
+    
+    .box{
+        flex-direction: column;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
+    .org .box .kanan {
+        padding: 1.5rem;
+    }
+    
+    .judul {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .horeca {
+        flex-direction: column;
+    }
+
+    .rating {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .kanan {
+        padding: 1.5rem;
+    }
+    
+    .judul {
+        padding: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        margin-top: 1rem;
+    }
+}
